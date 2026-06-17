@@ -8,7 +8,7 @@ genai.configure(api_key="AQ.Ab8RN6KAFX95zzqrfqEsqnIChSp7vJ0u7Jr_3_gIRl1XJl8loA")
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 # App title
-st.title("📚 AI Learning Buddy")
+st.title("📚 BPS AI Learning Buddy")
 
 # User input
 question = st.text_input(
