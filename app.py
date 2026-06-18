@@ -6,7 +6,7 @@ genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 # App title
-st.title("📚 AI Learning Buddy")
+st.title("📚 BPS chatbot")
 
 # User input
 question = st.text_input(
@@ -15,7 +15,7 @@ question = st.text_input(
 )
 
 # Explain button
-if st.button("Explain"):
+if st.button("Enter"):
     if question.strip():
         prompt = f"""
         You are a friendly teacher.
