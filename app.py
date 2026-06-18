@@ -1,14 +1,12 @@
 import streamlit as st
 import google.generativeai as genai
 
-# Replace with your NEW API key
-genai.configure(api_key="AQ.Ab8RN6KAFX95zzqrfqEsqnIChSp7vJ0u7Jr_3_gIRl1XJl8loA")
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
-# Initialize Gemini model
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 # App title
-st.title("📚 BPS AI Learning Buddy")
+st.title("📚 AI Learning Buddy")
 
 # User input
 question = st.text_input(
